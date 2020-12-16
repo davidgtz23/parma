@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Gotham Medium';
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+svg{
+    fill: currentColor;
+}
+
+
+.main{
+    margin-top: -80px;
+    section{
+        padding-top: 80px;
+    }
+}
+
+.container{
+    // background-color: #ff000040;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+@media(max-width: 1023px){
+  
+}
+@media(max-width: 767px){
+ 
+}
+

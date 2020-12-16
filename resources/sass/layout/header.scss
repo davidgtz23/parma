@@ -1,0 +1,54 @@
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        &-logo{
+            display: block;
+            width: 240px;
+            padding: 0 1.5rem;
+            img{
+                width: 100%;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1rem 0 0.5rem 0;
+            width: calc(50% - 120px);
+            border: solid 1px;
+            border-image: linear-gradient(to left, $brown , transparent) 1;
+            border-left: none;
+            border-right: none;
+            padding-right: 1rem;
+            &:last-child{
+                justify-content: flex-start;
+                border-image: linear-gradient(to right, $brown , transparent) 1;
+                padding-right: 0;
+                padding-left: 1rem;
+            }
+            li{
+                margin: 0 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    line-height: 1rem;
+                    font-family: 'Gotham Medium';
+                }
+            }
+        }
+    }
+}

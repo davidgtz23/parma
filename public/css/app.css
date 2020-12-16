@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham-BoldItalic.woff2") format("woff2"), url("../fonts/Gotham-BoldItalic.woff") format("woff"), url("../fonts/Gotham-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../fonts/Gotham-Black.woff2") format("woff2"), url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Thin";
+  src: url("../fonts/Gotham-Thin.woff2") format("woff2"), url("../fonts/Gotham-Thin.woff") format("woff"), url("../fonts/Gotham-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Thin";
+  src: url("../fonts/Gotham-ThinItalic.woff2") format("woff2"), url("../fonts/Gotham-ThinItalic.woff") format("woff"), url("../fonts/Gotham-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham XLight";
+  src: url("../fonts/Gotham-XLightItalic.woff2") format("woff2"), url("../fonts/Gotham-XLightItalic.woff") format("woff"), url("../fonts/Gotham-XLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham XLight";
+  src: url("../fonts/Gotham-XLight.woff2") format("woff2"), url("../fonts/Gotham-XLight.woff") format("woff"), url("../fonts/Gotham-XLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("../fonts/Gotham-UltraItalic.woff2") format("woff2"), url("../fonts/Gotham-UltraItalic.woff") format("woff"), url("../fonts/Gotham-UltraItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/Gotham-BookItalic.woff2") format("woff2"), url("../fonts/Gotham-BookItalic.woff") format("woff"), url("../fonts/Gotham-BookItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../fonts/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../fonts/Gotham-LightItalic.woff2") format("woff2"), url("../fonts/Gotham-LightItalic.woff") format("woff"), url("../fonts/Gotham-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../fonts/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../fonts/Gotham-MediumItalic.woff2") format("woff2"), url("../fonts/Gotham-MediumItalic.woff") format("woff"), url("../fonts/Gotham-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("../fonts/DINPro-Black.woff2") format("woff2"), url("../fonts/DINPro-Black.woff") format("woff"), url("../fonts/DINPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Louda";
+  src: url("../fonts/Louda-RegularSC.woff2") format("woff2"), url("../fonts/Louda-RegularSC.woff") format("woff"), url("../fonts/Louda-RegularSC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../icons/icomoon.eot?rgliq8");
+  src: url("../icons/icomoon.eot?rgliq8#iefix") format("embedded-opentype"), url("../icons/icomoon.ttf?rgliq8") format("truetype"), url("../icons/icomoon.woff?rgliq8") format("woff"), url("../icons/icomoon.svg?rgliq8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youtube:before {
+  content: "\E900";
+}
+
+.icon-instagram:before {
+  content: "\E901";
+}
+
+.icon-facebook:before {
+  content: "\E902";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Gotham Medium";
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.main {
+  margin-top: -80px;
+}
+.main section {
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.header__menu-logo {
+  display: block;
+  width: 240px;
+  padding: 0 1.5rem;
+}
+.header__menu-logo img {
+  width: 100%;
+}
+.header__menu ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 0 0.5rem 0;
+  width: calc(50% - 120px);
+  border: solid 1px;
+  -o-border-image: linear-gradient(to left, #8f6f4a, transparent) 1;
+     border-image: linear-gradient(to left, #8f6f4a, transparent) 1;
+  border-left: none;
+  border-right: none;
+  padding-right: 1rem;
+}
+.header__menu ul:last-child {
+  justify-content: flex-start;
+  -o-border-image: linear-gradient(to right, #8f6f4a, transparent) 1;
+     border-image: linear-gradient(to right, #8f6f4a, transparent) 1;
+  padding-right: 0;
+  padding-left: 1rem;
+}
+.header__menu ul li {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1rem;
+  font-family: "Gotham Medium";
+}
+
+.footer__retailers {
+  background-color: #8f6f4a;
+  height: 100px;
+}
+.footer__retailers .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__retailers-text {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-right: solid 1px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  font-size: 1rem;
+  text-align: right;
+  letter-spacing: 5px;
+  line-height: 2rem;
+}
+.footer__retailers-carousel {
+  width: calc(100% - 300px);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__retailers-carousel a img {
+  margin: 0 auto;
+}
+.footer__retailers-controls {
+  width: 100px;
+}
+.footer__content {
+  background-color: #171717;
+}
+.footer__content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.footer__content-nav .rss {
+  width: calc(50% - 50px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__content-nav .rss a {
+  color: #8f6f4a;
+  margin: 0 0.75rem;
+  font-size: 1.5rem;
+}
+.footer__content-nav .logo-footer {
+  width: 100px;
+}
+.footer__content-nav nav {
+  width: calc(50% - 50px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__content-nav nav a {
+  color: #666666;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+}
+.footer__content-nav nav a:hover {
+  text-decoration: underline;
+}
+.footer__content-legals {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  color: #666666;
+  padding-bottom: 0.5rem;
+}
+.footer__content-legals .tyc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__content-legals .tyc a {
+  margin-right: 1rem;
+  color: #666666;
+}
+.footer__content-legals .tyc a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  background-image: url("../images/bg_wood.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.home__banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__banner-left {
+  width: calc(50% - 160px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "DINPro";
+  font-size: 3.5rem;
+  text-align: right;
+  letter-spacing: 10px;
+}
+.home__banner-products {
+  width: 320px;
+}
+.home__banner-right {
+  width: calc(50% - 160px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home__banner-right p {
+  line-height: 1.5rem;
+  font-family: "Gotham Thin";
+  max-width: 350px;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+.home__products {
+  background-image: url("../images/home/bg_products.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  width: 100%;
+}
+.home__products .container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+.home__products-item {
+  width: 300px;
+  height: 300px;
+  margin: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+}
+.home__products-item .item-content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: solid 2px #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home__products-item .item-content .category {
+  background-color: #000;
+  padding: 0.7rem 0.75rem 0.2rem 0.75rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.home__products-item .item-content .name {
+  font-family: "Louda";
+  font-size: 2.5rem;
+  text-align: center;
+}
+.home__products-item .item-content .name:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 10px;
+  background-image: url("../images/silueta_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.home__recipe {
+  background-image: url("../images/home/bg_recipe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: calc(150px + 0.5rem + 4rem);
+  padding-bottom: 4rem;
+  margin-top: -158px;
+}
+.home__recipe-text {
+  font-family: "Gotham Thin";
+  font-size: 2rem;
+  max-width: 360px;
+}
+.home__recipe-text strong {
+  font-family: "Gotham Medium";
+  display: inline-block;
+}
+.home__recipe-btn {
+  color: #fff;
+  border: solid 1px #8f6f4a;
+  display: inline-block;
+  padding: 1.2rem 1rem 0.7rem 1rem;
+  margin-top: 0.5rem;
+  transition: linear 0.2s;
+}
+.home__recipe-btn svg {
+  width: 40px;
+  color: #8f6f4a;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+.home__recipe-btn:hover {
+  background-color: #8f6f4a;
+}
+.home__recipe-btn:hover svg {
+  color: #fff;
+}
+.home__recipe-product {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  z-index: 2;
+  width: 520px;
+}

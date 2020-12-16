@@ -1,0 +1,96 @@
+.footer{
+    &__retailers{
+        background-color: $brown;
+        height: 100px;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-text{
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0.5rem;
+            border-right: solid 1px rgb(0 0 0 / 20%);
+            height: 100px;
+            font-size: 1rem;
+            text-align: right;
+            letter-spacing: 5px;
+            line-height: 2rem;
+        }
+        &-carousel{
+            width: calc(100% - 300px);
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+        &-controls{
+            width: 100px;
+        }
+    }
+    &__content{
+        background-color: #171717;
+        &-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            .rss{
+                width: calc(50% - 50px);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                a{
+                    color: $brown;
+                    margin: 0 0.75rem;
+                    font-size: 1.5rem;
+                }
+            }
+            .logo-footer{
+                width: 100px;
+            }
+            nav{
+                width: calc(50% - 50px);
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                a{
+                    color: #666666;
+                    margin-left: 1rem;
+                    font-size: 0.75rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &-legals{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 0.75rem;
+            color: #666666;
+            padding-bottom: 0.5rem;
+            .tyc{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                a{
+                    margin-right: 1rem;
+                    color: #666666;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
